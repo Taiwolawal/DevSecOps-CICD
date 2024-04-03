@@ -24,3 +24,6 @@ It also checks git commits to see if you have committed any sensitive data.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ef1990fd-ef3c-41f0-a75f-54db2ba4bcbb)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/28e515a4-0d69-4023-a701-9a9a68f1c6e7)
+
+
