@@ -20,8 +20,7 @@ Check the documentation on how to use gitleaks properly
 
 It also checks git commits to see if you have committed any sensitive data.
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/d8da2f44-3306-45e0-9155-a89ab226ff6d)
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6324b8bf-698d-438b-9c5a-cbd2f37c7b47)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f9e75f37-ca38-49be-9559-251a82f0fd4e)
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ef1990fd-ef3c-41f0-a75f-54db2ba4bcbb)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/709cd491-078b-4477-a88e-1028d84ab761)
