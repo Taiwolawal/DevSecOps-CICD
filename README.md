@@ -11,8 +11,7 @@ There are different tools that can be used to scan for sensitive data in our cod
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c43bbefc-2b0b-4a79-8f1b-c5f6bdd182d5)
 
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4fd11caa-f00c-48a3-b1f3-620423b6477e)
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/00b70251-dc12-4d75-b665-fa6317fcbd29)
 
 Check the documentation on how to use gitleaks properly
 
