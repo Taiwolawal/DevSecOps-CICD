@@ -5,6 +5,13 @@ Setting up our CI pipeline, we will want to embed security checks in our softwar
 # Secret scanning
 There are different tools that can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data 
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8acfde66-ee93-440e-905e-865d0b48bc23)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4d7e3545-1896-4f48-992a-3ed8f8bf1ec3)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c43bbefc-2b0b-4a79-8f1b-c5f6bdd182d5)
+
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4fd11caa-f00c-48a3-b1f3-620423b6477e)
 
 Check the documentation on how to use gitleaks properly
