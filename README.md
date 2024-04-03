@@ -1,4 +1,4 @@
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4)## devsecops-project
+## devsecops-project
 
 Setting up our CI pipeline, we will want to embed security checks in our software development lifecycle (SDLC) such as our CICD pipeline
 
@@ -32,3 +32,5 @@ It also checks git commits to see if you have committed any sensitive data.
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/487de8a3-d558-465d-8a01-f2475f59615f)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/62acb861-d7ac-4b03-a9fe-e7f5b0197c5e)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4)
