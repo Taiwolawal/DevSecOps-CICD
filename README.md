@@ -40,3 +40,6 @@ Rectifying false positives
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/9d9fde89-fa4a-44c0-9685-dbc9729fb671)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e024b377-e809-4716-9417-82994f819ef2)
+
+# Static Code Security Testing
+Identifying vulnerabilities in source code, we will be using njsscan to do that 
