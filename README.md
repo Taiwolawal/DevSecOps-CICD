@@ -3,7 +3,7 @@
 Setting up our CI pipeline, we will want to embed security checks in our software development lifecycle (SDLC) such as our CICD pipeline
 
 # Secret scanning
-There are different tools that can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data 
+Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8acfde66-ee93-440e-905e-865d0b48bc23)
 
@@ -42,4 +42,16 @@ Rectifying false positives
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e024b377-e809-4716-9417-82994f819ef2)
 
 # Static Code Security Testing
-Identifying vulnerabilities in source code, we will be using njsscan to do that 
+In identifying vulnerabilities in source code, there is a need to use multiple tools to achieve an overall  view of vulnerabilities. we will be using njsscan and Semgrep respectively to do that
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/98ab1997-c9ed-4e2c-85fe-fde7cce5bb74)
+
+The result of the njsscan is showing one vulnerability and indicating success when we have the severity showing warning, we need to adjust the code
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3ce52c09-a67a-4934-bb86-3253eec51c95)
+
+Semgrep scan is showing close to 23 vulnerabilities
+
+
+
+
