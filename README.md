@@ -54,15 +54,17 @@ Semgrep scan is showing close to 23 vulnerabilities
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aea80a10-f81a-4bda-b824-37424639c6ba)
 
-Updating njsscan script '''njsscan --exit-warning . ''' to ensure it fails. Now we have showing exit code 1
+Updating njsscan script ```njsscan --exit-warning . ``` to ensure it fails. Now we have showing exit code 1
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1ca0768e-f877-4206-bbf4-d0067ebe8cf7)
 
 # Vulnerability Management
 
-Now  that we have done some tests, we should be able to upload the results for a central post where we can audit each vulnerability. This leads us to Defectdojo which will be used to visualize all our scan results. Now we need to update our code so as to update results from each tools. Updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
+Now  that we have done some tests, we should be able to upload the results for a central post where we can audit each vulnerability. This leads us to Defectdojo which will be used to visualize all our scan results. Now we need to update our code so as to update results from each tools. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
+
+Making use of defectdojo demo server to ```demo.defectdojo.org ```.
 
 
 
