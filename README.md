@@ -60,7 +60,7 @@ Updating njsscan script '''njsscan --exit-warning . ''' to ensure it fails. Now 
 
 # Vulnerability Management
 
-Now  that we have done some test, we should be able to upload the results for a central post where we can be able to audit each vulnerabilities. This leads us to Defectdojo, which will be used. Now we need to update our code so as to update results from each tools
+Now  that we have done some test, we should be able to upload the results for a central post where we can be able to audit each vulnerabilities. This leads us to Defectdojo, which will be used. Now we need to update our code so as to update results from each tools. Updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
 
