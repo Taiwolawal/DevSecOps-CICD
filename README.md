@@ -64,7 +64,23 @@ Now  that we have done some tests, we should be able to upload the results for a
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
 
-Making use of defectdojo demo server to ```demo.defectdojo.org ```.
+Making use of defectdojo demo server to ```demo.defectdojo.org ``` OR run the command below
+
+```
+git clone https://github.com/DefectDojo/django-DefectDojo
+cd django-DefectDojo
+./dc-build.sh
+./dc-up.sh postgres-redis
+```
+
+To get the admin credentials, run the following ``` docker-compose logs initializer | grep "Admin password:"   ``` fetch command (this may take up to 3 mins to complete).
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2b72d61e-b837-4622-bc78-cda543838e46)
+
+The username is ``` admin ```
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ca41bd60-0716-421a-bff3-4bad1b96acf3)
+
 
 
 
