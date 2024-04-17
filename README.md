@@ -81,6 +81,8 @@ The username is ``` admin ```
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ca41bd60-0716-421a-bff3-4bad1b96acf3)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2c271596-3058-4af5-893e-9744a7078985)
+
 
 
 
