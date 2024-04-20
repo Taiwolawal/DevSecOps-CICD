@@ -58,6 +58,9 @@ Updating njsscan script ```njsscan --exit-warning . ``` to ensure it fails. Now 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1ca0768e-f877-4206-bbf4-d0067ebe8cf7)
 
+# Software Composition Analysis
+We need to scan for all the dependencies in our code, to ensure there are not vulnerabilities in them
+
 # Vulnerability Management
 
 Now that we have done some tests, we should be able to upload the results for a central post where we can audit each vulnerability. This leads us to Defectdojo which will be used to visualize all our scan results. Now we need to update our code to update results from each tool. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
