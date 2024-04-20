@@ -64,6 +64,8 @@ Now that we have done some tests, we should be able to upload the results for a 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e77d6d69-74f1-4049-9a80-fbc07b512554)
+
 Making use of defectdojo demo server to ```demo.defectdojo.org ``` . The credentials are ``` admin / 1Defectdojo@demo#appsec ```.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/392c3806-3313-46b5-924a-8c7c6de3979c)
@@ -87,4 +89,6 @@ Click on the product type "DevSecOps"
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8a5607b3-6b8f-4503-a2e7-b4aa27ccdcac)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/22758e1a-818a-4ebb-b72b-3320c814067a)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cfb73db2-dfb1-4add-a7ed-580b99bf9e8c)
 
