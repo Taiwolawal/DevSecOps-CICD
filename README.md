@@ -60,28 +60,15 @@ Updating njsscan script ```njsscan --exit-warning . ``` to ensure it fails. Now 
 
 # Vulnerability Management
 
-Now  that we have done some tests, we should be able to upload the results for a central post where we can audit each vulnerability. This leads us to Defectdojo which will be used to visualize all our scan results. Now we need to update our code so as to update results from each tools. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
+Now that we have done some tests, we should be able to upload the results for a central post where we can audit each vulnerability. This leads us to Defectdojo which will be used to visualize all our scan results. Now we need to update our code to update results from each tool. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
 
-Making use of defectdojo demo server to ```demo.defectdojo.org ``` OR run the command below
+Making use of defectdojo demo server to ```demo.defectdojo.org ``` . The credentials are ``` admin / 1Defectdojo@demo#appsec ```.
 
-```
-git clone https://github.com/DefectDojo/django-DefectDojo
-cd django-DefectDojo
-./dc-build.sh
-./dc-up.sh postgres-redis
-```
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/392c3806-3313-46b5-924a-8c7c6de3979c)
 
-To get the admin credentials, run the following ``` docker-compose logs initializer | grep "Admin password:"   ``` fetch command (this may take up to 3 mins to complete).
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2b72d61e-b837-4622-bc78-cda543838e46)
-
-The username is ``` admin ```
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ca41bd60-0716-421a-bff3-4bad1b96acf3)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2c271596-3058-4af5-893e-9744a7078985)
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/80b6701c-e92e-430f-b7cc-fe8ed32d64a2)
 
 
 
