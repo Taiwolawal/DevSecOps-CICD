@@ -1,5 +1,15 @@
 ## devsecops-project
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f02316ac-f2bf-494a-beee-7af59075ccac)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1a7f6359-76d1-473d-af39-0b888b724548)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dc3a241a-9231-4cef-a3e1-53d6c4ed3b34)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/950896f3-f184-44fc-a43c-b5e94c31091c)
+
+
+
 Setting up our CI pipeline, we will want to embed security checks in our software development lifecycle (SDLC) such as our CICD pipeline
 
 # Secret scanning
