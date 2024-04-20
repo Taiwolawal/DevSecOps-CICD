@@ -61,6 +61,8 @@ Updating njsscan script ```njsscan --exit-warning . ``` to ensure it fails. Now 
 # Software Composition Analysis
 We need to scan for all the dependencies and libraries in our code, to ensure there are no vulnerabilities in them. We will add another job to do SCA on our code in the node_module folder where our dependencies and check for the CVE's
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/03079c7b-14f1-4194-a417-fff337049fb5)
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/9422449e-2e8f-4c36-aacf-1a42752e19d1)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1289a81b-9d11-4095-a5d4-40c66dad51fe)
