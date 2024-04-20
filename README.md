@@ -67,6 +67,37 @@ We need to scan for all the dependencies and libraries in our code, to ensure th
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1289a81b-9d11-4095-a5d4-40c66dad51fe)
 
+# Build Image
+Before we build our image, we need to ensure our dockerfile follow best practice when creating an image such as:
+- Avoid using latest images
+- Run as a Non-Root User
+
+We will use OPA/confest to run a static test on our dockerfile using rego to confirm. We create a file called opa-docker-rego-security.rego and specified all the conditions we want our dockerfile to meet
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f482e056-64fb-4f52-a1cf-667c6628c7e8)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b0b0bcd8-b488-4b95-b511-79a3cd786a38)
+
+Running this rules against our Dockerfile
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/11b4e17c-3382-4ea0-b05a-042d4687efd2)
+
+We will update our code with 
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/d9231f8a-0f7b-4241-849f-365336a68d99)
+
+And got this result stating we are using latest image and running the container as a root user, which are the conditions we specified in the policy
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8deff12b-cee5-4df6-8ff5-1a9a1d7f29d3)
+
+
+Now lets update the dockerfile with the right 
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f8bd947a-8433-466b-87fd-f4ab063e2444)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/356c5b22-26be-4885-b5aa-1fb193a8372e)
+
+
 
 # Vulnerability Management
 
