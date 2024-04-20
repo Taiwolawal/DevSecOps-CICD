@@ -70,7 +70,21 @@ Making use of defectdojo demo server to ```demo.defectdojo.org ``` . The credent
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/80b6701c-e92e-430f-b7cc-fe8ed32d64a2)
 
+Now to upload our results to defectdojo
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/546fd26f-680b-4f68-872f-8bc8001c28f7)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e7b0d5c3-5aa3-48ee-ae2c-832081157c8b)
 
+Click on the product type "DevSecOps"
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f45d0fd1-3298-4aa6-ae64-0aabb93ca9a4)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/eda57fe0-f5c7-478a-8688-1855b824cda3)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e476fbeb-c16b-4a10-b5f2-9205755c51f6)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8a5607b3-6b8f-4503-a2e7-b4aa27ccdcac)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/22758e1a-818a-4ebb-b72b-3320c814067a)
 
