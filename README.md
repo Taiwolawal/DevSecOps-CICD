@@ -97,6 +97,21 @@ Now lets update the dockerfile with the right
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/356c5b22-26be-4885-b5aa-1fb193a8372e)
 
+Next, we need to build our image and scan them
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aa3d5c50-ee68-4f41-88ee-b9778a5c5672)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b0508352-7b55-4182-ad8c-b6c8b862db10)
+
+Update the necessary variables for the CICD pipeline
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/31d8d558-30dd-436c-8ca4-2cabbcf039d9)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ba6624a4-a196-454b-9b85-7c4649fbc8a3)
+
+
 
 
 # Vulnerability Management
