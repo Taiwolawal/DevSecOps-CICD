@@ -92,3 +92,46 @@ Click on the product type "DevSecOps"
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cfb73db2-dfb1-4add-a7ed-580b99bf9e8c)
 
+# Automate Uploading Security Scan Results
+
+We will use python script to upload results on defectdojo
+- Get Token
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cc6faee3-2d74-429c-8d4e-9c70e06a3c18)
+
+- Click on Generate New Key
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f98d7ad0-f14e-40b1-878d-84b35034f684)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
