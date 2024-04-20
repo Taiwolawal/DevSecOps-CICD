@@ -122,6 +122,11 @@ Update the necessary variables for the CICD pipeline
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ba6624a4-a196-454b-9b85-7c4649fbc8a3)
 
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c3d583c4-21ba-40d6-96c2-4012c30f6756)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e26e754f-2ba1-41d0-a188-63a4cff211f4)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2d4accd9-59ed-4a6b-8128-5c7381e7d1be)
 
 
 # Vulnerability Management
