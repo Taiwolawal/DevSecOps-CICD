@@ -180,11 +180,13 @@ We will use python script to upload results on defectdojo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/a5ec6d62-3dea-4b69-99f5-703c88788e25)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e339c52d-78ee-4800-a2f8-55352d00d94a)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/bde5cad5-422c-4510-a868-57d07e8c612d)
 
-
-
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3bfda682-adf6-46b1-9137-922d9fd8c398)
 
 
 
