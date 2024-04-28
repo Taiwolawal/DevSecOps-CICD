@@ -167,6 +167,9 @@ Click on the product type "DevSecOps"
 
 # Automate Uploading Security Scan Results
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0)
+
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68)
 
 
