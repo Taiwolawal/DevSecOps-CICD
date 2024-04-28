@@ -135,6 +135,8 @@ Now that we have done some tests, we should be able to upload the results for a 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/39220c74-2a7d-4bf1-957a-48410ae87f40)
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e77d6d69-74f1-4049-9a80-fbc07b512554)
 
 Making use of defectdojo demo server to ```demo.defectdojo.org ``` . The credentials are ``` admin / 1Defectdojo@demo#appsec ```.
