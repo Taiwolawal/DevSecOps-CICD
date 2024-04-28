@@ -167,6 +167,9 @@ Click on the product type "DevSecOps"
 
 # Automate Uploading Security Scan Results
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68)
+
+
 We will use python script to upload results on defectdojo
 - Get Token
 
@@ -193,8 +196,7 @@ We will use python script to upload results on defectdojo
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/89eae17b-60b2-4479-b5ac-5d7987da5583)
 
 
-
-
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/fbe47c4c-7d21-4d7e-a2a7-e972dbdb978d)
 
 
 
