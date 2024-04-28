@@ -176,6 +176,7 @@ We will use python script to upload results on defectdojo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/5ca49842-4c29-4085-a157-fc3fa83f49ff)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
 
 
 
