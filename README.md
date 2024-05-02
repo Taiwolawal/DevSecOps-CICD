@@ -206,8 +206,11 @@ We will use python script to upload results on defectdojo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/045c5ee5-e3d7-4bb9-a63d-35802dc78ca4)
 
+Gitlab runner instance
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/95a3fd8f-d940-4b61-ab39-8eb4e2e12431)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4429c583-3939-41ea-b031-e80d88932193)
 
 
 
