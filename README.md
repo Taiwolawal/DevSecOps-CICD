@@ -212,6 +212,7 @@ Gitlab runner instance
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4429c583-3939-41ea-b031-e80d88932193)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1fef15e6-ef7b-40ee-b878-77fc84951162)
 
 
 
