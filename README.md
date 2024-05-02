@@ -226,10 +226,20 @@ sudo usermod -aG docker ubuntu
 
 Restart the server
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/27e3c9e7-ff28-4d9c-bf93-3ee2e07d3e78)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2143fffb-b8fc-42e7-86c3-193c98f75145)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/680fcc0f-5c80-4241-bbec-4471070d7677)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ab825f66-a8a2-4900-a308-614dd89d5dbd)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/70e97674-1f3a-4f0e-80ab-9a1e2eb25a21)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e439240d-1150-4bde-a406-44ae38542479)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1d3f6ea8-61b6-4d91-ac13-9fd6bb24c41d)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/de09bfed-30f0-41d0-9966-a5463123045b)
 
 
