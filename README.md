@@ -214,9 +214,17 @@ Gitlab runner instance
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1fef15e6-ef7b-40ee-b878-77fc84951162)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cad9ea70-9a08-4770-9f1f-55a71479c937)
 
 
+```
+sudo apt update
+sudo apt  install awscli -y
+sudo apt  install docker.io -y
+sudo usermod -aG docker ubuntu
+```
 
+Restart the server
 
 
 
