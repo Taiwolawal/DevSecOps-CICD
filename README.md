@@ -228,6 +228,7 @@ sudo apt update
 sudo apt  install awscli -y
 sudo apt  install docker.io -y
 sudo usermod -aG docker ubuntu
+sudo usermod -aG docker gitlab-runner
 ```
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3257478b-f8f7-4618-961c-12830f50c462)
