@@ -236,6 +236,14 @@ sudo usermod -aG docker gitlab-runner
 
 Restart the server
 
+```
+sudo apt-get install wget apt-transport-https gnupg lsb-release
+wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-key add -
+echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
+sudo apt-get update
+sudo apt-get install trivy
+```
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/27e3c9e7-ff28-4d9c-bf93-3ee2e07d3e78)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2143fffb-b8fc-42e7-86c3-193c98f75145)
