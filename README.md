@@ -216,6 +216,12 @@ Gitlab runner instance
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cad9ea70-9a08-4770-9f1f-55a71479c937)
 
+```
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
+sudo apt-get install gitlab-runner
+
+
+```
 
 ```
 sudo apt update
@@ -223,6 +229,9 @@ sudo apt  install awscli -y
 sudo apt  install docker.io -y
 sudo usermod -aG docker ubuntu
 ```
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3257478b-f8f7-4618-961c-12830f50c462)
+
 
 Restart the server
 
