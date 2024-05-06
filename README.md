@@ -279,8 +279,12 @@ sudo apt-get install trivy
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3c7ffc88-7caf-403e-9b9c-d9000402792f)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/69daab95-24a6-4d55-a673-c900a2318d51)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e888f82c-9318-4fb1-b364-813cd9820603)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ced8a73f-c1ad-4977-85d3-e16077216e95)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/48ba9ceb-898d-43b9-93b9-31e16c2c2d3d)
 
 
