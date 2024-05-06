@@ -165,6 +165,13 @@ Click on the product type "DevSecOps"
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cfb73db2-dfb1-4add-a7ed-580b99bf9e8c)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/408ce951-5fd0-411e-b22d-d1e4d2e3cde8)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b30e7f7e-0ef3-485c-8746-123b850f4d9d)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b294b4c7-bb68-410c-b5f8-be39beb4639d)
+
+
 # Automate Uploading Security Scan Results
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0)
