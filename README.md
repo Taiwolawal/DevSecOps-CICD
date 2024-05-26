@@ -1,4 +1,4 @@
-## devsecops-project
+## devsecops-project (Currently still working on the documentation)
 
 
 Setting up our CI pipeline, we will want to embed security checks in our software development lifecycle (SDLC) such as our CICD pipeline
