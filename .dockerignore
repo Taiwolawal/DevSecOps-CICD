@@ -1,0 +1,25 @@
+.git/
+monitoring/
+node_modules/
+screenshots/
+test/
+build/reports/
+dist/
+vagrant/
+logs/
+Dockerfile
+.npmrc
+.gitlab/
+.gitlab*
+*temp
+*tmp
+
+gitleaks.json
+semgrep.json
+njsscan.sarif
+retire.json
+trivy.json
+
+# Pattern is *not covered* by node_modules/ above no matter what IntelliJ says!
+frontend/node_modules/
+frontend/dist/
