@@ -21,7 +21,7 @@ elif file_name == 'zap.json':
 
 
 headers = {
-    'Authorization': 'Token e323489cae4c31377c896d021becd67e69bbdf02'
+    'Authorization': 'Token 911f3b56988130b2363fdd9088d5c2f8420f2bdaf'
 }
 
 url = 'https://demo.defectdojo.org/api/v2/import-scan/'
@@ -31,7 +31,7 @@ data = {
     'verified': True,
     'scan_type': scan_type,
     'minimum_severity': 'Low',
-    'engagement': 24
+    'engagement': 14
 }
 
 files = {

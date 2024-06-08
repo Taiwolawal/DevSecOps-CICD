@@ -220,7 +220,11 @@ We will use python code to upload results on defectdojo
 
 We have our python code ```upload-reports.py```consisting of the API KEY token and updating the engagement value to 14 in the data field
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68)
+![alt text](image-2.png)
+
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68) -->
+
+Update the pipeline to upload scan reports
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0)
 
