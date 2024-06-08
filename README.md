@@ -33,20 +33,9 @@ We can install the tool locally on our system and ensure before we commit the co
 
 <img src="image/image.png">
 
-![alt text](image.png)
-
-Taiwolawal/devsecops-project/image
-
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c43bbefc-2b0b-4a79-8f1b-c5f6bdd182d5)
 
 The screenshot above shows that we have sensitive data in our code, as a result, you will not be able to commit the code as planned. This step is done from the developer side to conform with security checks. We need to update this also in our pipeline
-
-
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8acfde66-ee93-440e-905e-865d0b48bc23)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4d7e3545-1896-4f48-992a-3ed8f8bf1ec3)
-
 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/00b70251-dc12-4d75-b665-fa6317fcbd29)
@@ -55,17 +44,13 @@ Check the documentation on how to use [gitleaks](https://hub.docker.com/r/zricet
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6ae43913-7329-448c-b328-128cc5b2f978)
 
-It also checks git commits to see if you have committed any sensitive data.
-
-
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b9f5d833-169b-4848-8880-e0fdd6e3cb1c)
+We can see the pipeline failed
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/487de8a3-d558-465d-8a01-f2475f59615f)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/62acb861-d7ac-4b03-a9fe-e7f5b0197c5e)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4)
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4) -->
 
 Rectifying false positives
 
@@ -336,3 +321,12 @@ sudo apt-get install trivy
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ff63201d-af05-4760-823a-a68d01f566bb)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/fe7ed087-a2d6-4d3b-aa78-140bb95a8e73)
+
+
+
+
+
+
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8acfde66-ee93-440e-905e-865d0b48bc23)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4d7e3545-1896-4f48-992a-3ed8f8bf1ec3) -->
