@@ -21,7 +21,10 @@ This project will be focused on CICD part of software development and embed secu
 # Secret scanning
 We will start scanning our application code for sensitive data, secrets, credentials etc. Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data. 
 
-We can install the tool locally on our system and ensure before we commit the code it flags off if there are any sensitive data in our code.
+We will start by installing the tool locally on our system and use pre-commit hook and ensure before we commit the code it flags off if there are any sensitive data in our code. The goals is to:
+
+- Automatically run scan before code is pushed to remote Git repository
+- Prevent any hard-coded secrets in the Git repository
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6324b8bf-698d-438b-9c5a-cbd2f37c7b47)
 
@@ -50,9 +53,9 @@ We can see the pipeline failed
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/62acb861-d7ac-4b03-a9fe-e7f5b0197c5e)
 
-<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4) -->
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4)
 
-Rectifying false positives
+Looking at the result we got from the scan, we have some false postives. False positive is when a scanning tool incorrectly flags a security vulnerability.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/9d9fde89-fa4a-44c0-9685-dbc9729fb671)
 
