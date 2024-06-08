@@ -334,6 +334,8 @@ Attach SSM Role to EC2 Instance. So EC2 instance is allowed to be managed by SSM
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ab825f66-a8a2-4900-a308-614dd89d5dbd)
 
+Attach the role to the Gitlab-Runner server
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/70e97674-1f3a-4f0e-80ab-9a1e2eb25a21)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e439240d-1150-4bde-a406-44ae38542479)
