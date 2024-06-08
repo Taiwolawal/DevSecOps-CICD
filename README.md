@@ -38,7 +38,7 @@ We will start by installing the tool locally on our system and use pre-commit ho
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c43bbefc-2b0b-4a79-8f1b-c5f6bdd182d5)
 
-The screenshot above shows that we have sensitive data in our code, as a result, you will not be able to commit the code as planned. This step is done from the developer side to conform with security checks. We need to update this also in our pipeline
+The screenshot above shows that we have sensitive data in our code, as a result, you will not be able to commit the code as planned. We need to update this also in our pipeline
 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/00b70251-dc12-4d75-b665-fa6317fcbd29)
@@ -57,7 +57,7 @@ We can see the pipeline failed
 
 Looking at the result we got from the scan, we have some false postives. False positive is when a scanning tool incorrectly flags a security vulnerability. As a result we need to go over the scan results to be sure, the result we are getting in line with what we are expecting. 
 
-We have a folder named test which contains some dummy sensitive data, which we used for our yarn_test. We will excempt it from the scan, thereby creating a ``.gitleaks.toml`` file and specifying the folder or path to avoid while scanning. If we run the pipeline again, you will see we now have 15 warnings compare to 46 earlier.
+We have a folder named test which contains some dummy sensitive data, which we used for our yarn_test. We will exempt it from the scan, thereby creating a ``.gitleaks.toml`` file and specifying the folder or path to avoid while scanning. If we run the pipeline again, you will see we now have 15 warnings compare to 46 earlier.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/9d9fde89-fa4a-44c0-9685-dbc9729fb671)
 
