@@ -220,6 +220,8 @@ We will use python code to upload results on defectdojo
 
 We have our python code ```upload-reports.py```consisting of the API KEY token and updating the engagement value to 14 in the data field
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
+
 ![alt text](image-2.png)
 
 <!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68) -->
@@ -228,16 +230,12 @@ Update the pipeline to upload scan reports
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/5ca49842-4c29-4085-a157-fc3fa83f49ff)
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/5ca49842-4c29-4085-a157-fc3fa83f49ff)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
-
-
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6) -->
 
 
-
-
-
+Now we have uploaded all our scan results on DefectDojo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/a5ec6d62-3dea-4b69-99f5-703c88788e25)
 
