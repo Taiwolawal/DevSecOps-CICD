@@ -31,6 +31,8 @@ We can install the tool locally on our system and ensure before we commit the co
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e0053049-0399-45e8-ba4d-d02f44b69170)
 
+![alt text](image.png)
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c43bbefc-2b0b-4a79-8f1b-c5f6bdd182d5)
 
 The screenshot above shows that we have sensitive data in our code, as a result, you will not be able to commit the code as planned. This step is done from the developer side to conform with security checks. We need to update this also in our pipeline
