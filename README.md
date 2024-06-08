@@ -1,7 +1,18 @@
 ## devsecops-project (Currently still working on the documentation)
 
+What is DevSecOps?
 
-Setting up our CI pipeline, we will want to embed security checks in our software development lifecycle (SDLC) such as our CICD pipeline
+DevSecOps stands for Development, Security, and Operations. It is an approach that integrates security practices into the DevOps process, ensuring that security is considered at every stage of the software development lifecycle (SDLC). The goal is to build a culture of shared responsibility for security among all participants in the development and operations processes.
+
+The idea is to provide layered security, such that if attackers gain access to some part of the syste they should not get access to your whole system i.e reducing the blast surface. They include:
+
+- Access Management
+- Network security
+- Application security
+- Logging
+- Monitoring
+
+Setting up our CI pipeline, we will want to embed security checks in our software development lifecycle (SDLC) such as our CICD pipeline.
 
 # Secret scanning
 Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data 
@@ -43,6 +54,10 @@ Rectifying false positives
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e024b377-e809-4716-9417-82994f819ef2)
 
 # Static Code Security Testing
+- Static code analysis (app is not running)
+- Identifies security vulnerabilities in app’s source code, configuration files etc.
+- Looks for common coding errors, deviations from secure coding practices etc
+
 In identifying vulnerabilities in source code, there is a need to use multiple tools to achieve an overall  view of vulnerabilities. we will be using njsscan and Semgrep respectively to do that
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/98ab1997-c9ed-4e2c-85fe-fde7cce5bb74)
@@ -60,6 +75,11 @@ Updating njsscan script ```njsscan --exit-warning . ``` to ensure it fails. Now 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1ca0768e-f877-4206-bbf4-d0067ebe8cf7)
 
 # Software Composition Analysis
+- Check third-party and open-source libraries and frameworks
+- SCA tool goes through the dependencies of your application and checks whether any known vulnerabilities for that dependency and the specific version
+you use
+-
+
 We need to scan for all the dependencies and libraries in our code, to ensure there are no vulnerabilities in them. We will add another job to do SCA on our code in the node_module folder where our dependencies and check for the CVE's
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/03079c7b-14f1-4194-a417-fff337049fb5)
