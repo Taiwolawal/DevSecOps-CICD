@@ -255,7 +255,7 @@ Now we have uploaded all our scan results on DefectDojo
 
 Now, we can easily audit all the vulnerabilities and have a very good understanding on common ones you are faced with and address ways of minimizing it.
 
-Next, we will deploy the application on a server to run DAST and also create a gitlab runner
+Next, we will deploy the application on a server (App-Server) to run DAST and also provision a server (Gitlab-Runner) to have our Self-managed Gitlab runner to run our work loads. The idea of running your pipeline workloads on a dedicated Gitlab runner is to allows for better control over security policies and compliance with internal security requirements. You can ensure that sensitive data and credentials are handled securely.
 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/80b48ad4-4bb1-4f87-8150-ef69ce45b541)
@@ -268,9 +268,14 @@ Gitlab runner instance
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4429c583-3939-41ea-b031-e80d88932193)
 
+
+
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1fef15e6-ef7b-40ee-b878-77fc84951162)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cad9ea70-9a08-4770-9f1f-55a71479c937)
+
+Set-up Gitlab-runner of your Gitlab-CI repo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f02316ac-f2bf-494a-beee-7af59075ccac)
 
@@ -280,11 +285,11 @@ Gitlab runner instance
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/950896f3-f184-44fc-a43c-b5e94c31091c)
 
+Copy the following command below on the Gitlab-Runner server
+
 ```
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
 sudo apt-get install gitlab-runner
-
-
 ```
 
 ```
