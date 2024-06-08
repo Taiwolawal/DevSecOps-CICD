@@ -186,7 +186,7 @@ Click on the product type "DevSecOps"
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8a5607b3-6b8f-4503-a2e7-b4aa27ccdcac)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/22758e1a-818a-4ebb-b72b-3320c814067a)
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/22758e1a-818a-4ebb-b72b-3320c814067a) -->
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cfb73db2-dfb1-4add-a7ed-580b99bf9e8c)
 
@@ -196,18 +196,20 @@ Click on the product type "DevSecOps"
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b294b4c7-bb68-410c-b5f8-be39beb4639d)
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b294b4c7-bb68-410c-b5f8-be39beb4639d) -->
 
 
 # Automate Uploading Security Scan Results
 
+Now lets write a python code to upload the results. 
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0)
 
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68)
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68) -->
 
 
-We will use python script to upload results on defectdojo
+We will use python code to upload results on defectdojo
 - Get Token
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cc6faee3-2d74-429c-8d4e-9c70e06a3c18)
@@ -215,6 +217,8 @@ We will use python script to upload results on defectdojo
 - Click on Generate New Key
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f98d7ad0-f14e-40b1-878d-84b35034f684)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/5ca49842-4c29-4085-a157-fc3fa83f49ff)
 
