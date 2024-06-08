@@ -89,10 +89,9 @@ Updating njsscan script ```njsscan --exit-warning . ``` to ensure it fails. Now 
 
 # Software Composition Analysis
 - Check third-party and open-source libraries and frameworks
-- SCA tool goes through the dependencies of your application and checks whether any known vulnerabilities for that dependency and the specific version
-you use
+- SCA tool goes through the dependencies of your application and checks whether any known vulnerabilities for that dependency and the specific version you use
 
-We need to scan for all the dependencies and libraries in our code, to ensure there are no vulnerabilities in them. We will add another job to do SCA on our code in the node_module folder where our dependencies and check for the CVE's
+We will be using ```retire.js```  to scan for all the dependencies and libraries in our code, to ensure there are no vulnerabilities in them. We will add another job to do SCA to scan codes of libraries in the node_modules folder where our dependencies are.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/03079c7b-14f1-4194-a417-fff337049fb5)
 
@@ -100,12 +99,14 @@ We need to scan for all the dependencies and libraries in our code, to ensure th
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1289a81b-9d11-4095-a5d4-40c66dad51fe)
 
+From the screenshots above, we can see all the vulnerabilities.
+
 # Build Image
 Before we build our image, we need to ensure our dockerfile follow best practice when creating an image such as:
 - Avoid using latest images
-- Run as a Non-Root User
+- Run as a Non-Root User etc.
 
-We will use OPA/confest to run a static test on our dockerfile using rego to confirm. We create a file called opa-docker-rego-security.rego and specified all the conditions we want our dockerfile to meet
+We will use OPA Confest to run a static test on our dockerfile using Rego language from Open Policy Agent to confirm. We create a file called opa-docker-rego-security.rego and specified all the conditions we want our dockerfile to meet
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f482e056-64fb-4f52-a1cf-667c6628c7e8)
 
@@ -115,16 +116,16 @@ Running this rules against our Dockerfile
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/11b4e17c-3382-4ea0-b05a-042d4687efd2)
 
-We will update our code with 
+We will update our pipeline with OPA Conftest  
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/d9231f8a-0f7b-4241-849f-365336a68d99)
 
-And got this result stating we are using latest image and running the container as a root user, which are the conditions we specified in the policy
+The result we got states we are using latest image and running the container as a root user, which are the conditions we specified in the policy.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8deff12b-cee5-4df6-8ff5-1a9a1d7f29d3)
 
 
-Now lets update the dockerfile with the right 
+Now lets update the Dockerfile 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f8bd947a-8433-466b-87fd-f4ab063e2444)
 
@@ -154,7 +155,7 @@ Update the necessary variables for the CICD pipeline
 
 # Vulnerability Management
 
-Now that we have done some tests, we should be able to upload the results for a central post where we can audit each vulnerability. This leads us to Defectdojo which will be used to visualize all our scan results. Now we need to update our code to update results from each tool. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
+Now that we have done some tests, we should be able to upload all the results from the various scan to a centralised platform, where we can audit each vulnerability. This leads us to ``Defectdojo`` which will be used to visualize all our scan results. Now we need to update our code to update results from each tool. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
 
@@ -162,13 +163,14 @@ Now that we have done some tests, we should be able to upload the results for a 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e77d6d69-74f1-4049-9a80-fbc07b512554)
 
-Making use of defectdojo demo server to ```demo.defectdojo.org ``` . The credentials are ``` admin / 1Defectdojo@demo#appsec ```.
+Making use of defectdojo demo server ```demo.defectdojo.org ``` . The credentials are ``` admin / 1Defectdojo@demo#appsec ```.
+
+Now, lets setup DefectDojo to upload our scan results
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/392c3806-3313-46b5-924a-8c7c6de3979c)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/80b6701c-e92e-430f-b7cc-fe8ed32d64a2)
 
-Now to upload our results to defectdojo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/546fd26f-680b-4f68-872f-8bc8001c28f7)
 
@@ -186,13 +188,15 @@ Click on the product type "DevSecOps"
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/22758e1a-818a-4ebb-b72b-3320c814067a)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cfb73db2-dfb1-4add-a7ed-580b99bf9e8c)
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cfb73db2-dfb1-4add-a7ed-580b99bf9e8c) -->
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/408ce951-5fd0-411e-b22d-d1e4d2e3cde8)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b30e7f7e-0ef3-485c-8746-123b850f4d9d)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b294b4c7-bb68-410c-b5f8-be39beb4639d)
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
+
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b294b4c7-bb68-410c-b5f8-be39beb4639d) -->
 
 
 # Automate Uploading Security Scan Results
@@ -215,6 +219,13 @@ We will use python script to upload results on defectdojo
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/5ca49842-4c29-4085-a157-fc3fa83f49ff)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
+
+
+
+
+
+
+
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/a5ec6d62-3dea-4b69-99f5-703c88788e25)
 
