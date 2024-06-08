@@ -290,7 +290,7 @@ In the tags section, specify ec2, shell. Which will be what we use to reference 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/950896f3-f184-44fc-a43c-b5e94c31091c)
 
-SSH into Gitlab_runner server to run the (installation commands)[https://docs.gitlab.com/runner/install/linux-repository.html]. Copy the following command below on the Gitlab-Runner server
+SSH into Gitlab_runner server to run the (installation commands)[https://docs.gitlab.com/runner/install/linux-repository.html] Copy the following command below on the Gitlab-Runner server.
 
 ```
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
@@ -325,12 +325,20 @@ Connect to the Gitlab-Runner server via SSH and run the following command ``` su
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/27e3c9e7-ff28-4d9c-bf93-3ee2e07d3e78)
 
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1d3f6ea8-61b6-4d91-ac13-9fd6bb24c41d)
 
-Attach SSM Role to EC2 Instance. So EC2 instance is allowed to be managed by SSM
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/de09bfed-30f0-41d0-9966-a5463123045b)
+
+
+Attach SSM Role to EC2 Instance, so the EC2 instance is allowed to be managed by SSM.
+
+Create Role for both Gitlab-Runner and App-Server instances. Below is Gitlab-runner setup (create role for App-Server also)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2143fffb-b8fc-42e7-86c3-193c98f75145)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/680fcc0f-5c80-4241-bbec-4471070d7677)
+
+Attach AmazonSSMFUllAccess and AmazonEC2ContainerRegistryFullAccess  policy
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ab825f66-a8a2-4900-a308-614dd89d5dbd)
 
@@ -340,13 +348,13 @@ Attach the role to the Gitlab-Runner server
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e439240d-1150-4bde-a406-44ae38542479)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1d3f6ea8-61b6-4d91-ac13-9fd6bb24c41d)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/de09bfed-30f0-41d0-9966-a5463123045b)
+Now lets connect to the Gitlab-Runner via session-manager. 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82aa54a3-6311-4a0a-9aa0-137a3b522d51)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/042b2fdf-e273-4811-8229-90a648df5a6b)
+
+Moving forward we should remove port 22 from both servers.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cc5f7f32-e3a8-4b7d-964a-2895ec454479)
 
