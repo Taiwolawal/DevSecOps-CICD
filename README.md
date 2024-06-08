@@ -1,4 +1,4 @@
-## devsecops-project (Currently still working on the documentation)
+## (Currently still working on the documentation)
 
 What is DevSecOps?
 
