@@ -290,7 +290,7 @@ In the tags section, specify ec2, shell. Which will be what we use to reference 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/950896f3-f184-44fc-a43c-b5e94c31091c)
 
-SSH into Gitlab_runner server to run the (installation commands)[https://docs.gitlab.com/runner/install/linux-repository.html] Copy the following command below on the Gitlab-Runner server.
+SSH into Gitlab-runner server to run the [installation commands](https://docs.gitlab.com/runner/install/linux-repository.html) . Copy the following command below on the Gitlab-Runner server.
 
 ```
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
@@ -330,7 +330,7 @@ Connect to the Gitlab-Runner server via SSH and run the following command ``` su
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/de09bfed-30f0-41d0-9966-a5463123045b)
 
 
-Attach SSM Role to EC2 Instance, so the EC2 instance is allowed to be managed by SSM.
+Attach SSM Role to the servers, so that the servers will be allowed to be managed by SSM.
 
 Create Role for both Gitlab-Runner and App-Server instances. Below is Gitlab-runner setup (create role for App-Server also)
 
@@ -338,7 +338,7 @@ Create Role for both Gitlab-Runner and App-Server instances. Below is Gitlab-run
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/680fcc0f-5c80-4241-bbec-4471070d7677)
 
-Attach AmazonSSMFUllAccess and AmazonEC2ContainerRegistryFullAccess  policy
+Attach AmazonSSMFullAccess and AmazonEC2ContainerRegistryFullAccess policy
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ab825f66-a8a2-4900-a308-614dd89d5dbd)
 
