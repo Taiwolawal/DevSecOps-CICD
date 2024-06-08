@@ -45,7 +45,7 @@ The screenshot above shows that we have sensitive data in our code, as a result,
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/00b70251-dc12-4d75-b665-fa6317fcbd29)
 
-Check the documentation on how to use gitleaks properly
+Check the documentation on how to use [gitleaks](https://hub.docker.com/r/zricethezav/gitleaks) properly
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6ae43913-7329-448c-b328-128cc5b2f978)
 
