@@ -201,9 +201,9 @@ Click on the product type "DevSecOps"
 
 # Automate Uploading Security Scan Results
 
-Now lets write a python code to upload the results. 
+<!-- Now lets write a python code to upload the results. 
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0)
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0) -->
 
 
 <!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68) -->
@@ -218,7 +218,11 @@ We will use python code to upload results on defectdojo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f98d7ad0-f14e-40b1-878d-84b35034f684)
 
+We have our python code ```upload-reports.py```consisting of the API KEY token and updating the engagement value to 14 in the data field
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dfc6a839-4d9a-4eee-9ebc-6bddc8104aa0)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/5ca49842-4c29-4085-a157-fc3fa83f49ff)
 
