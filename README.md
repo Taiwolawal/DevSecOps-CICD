@@ -43,7 +43,7 @@ The screenshot above shows that we have sensitive data in our code, as a result,
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/00b70251-dc12-4d75-b665-fa6317fcbd29)
 
-Check the documentation on how to use [gitleaks](https://hub.docker.com/r/zricethezav/gitleaks) properly
+Check the documentation on how to use [gitleaks](https://github.com/gitleaks/gitleaks) properly
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6ae43913-7329-448c-b328-128cc5b2f978)
 
@@ -53,11 +53,15 @@ We can see the pipeline failed
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/62acb861-d7ac-4b03-a9fe-e7f5b0197c5e)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4)
+<!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82cb2dda-cdb3-4c4c-810c-87a7c803c8c4) -->
 
-Looking at the result we got from the scan, we have some false postives. False positive is when a scanning tool incorrectly flags a security vulnerability.
+Looking at the result we got from the scan, we have some false postives. False positive is when a scanning tool incorrectly flags a security vulnerability. As a result we need to go over the scan results to be sure, the result we are getting in line with what we are expecting. 
+
+We have a folder named test which contains some dummy sensitive data, which we used for our yarn_test. We will excempt it from the scan, thereby creating a ``.gitleaks.toml`` file and specifying the folder or path to avoid while scanning. If we run the pipeline again, you will see we now have 15 warnings compare to 4§ earlier
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/9d9fde89-fa4a-44c0-9685-dbc9729fb671)
+
+![alt text](image2.png)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e024b377-e809-4716-9417-82994f819ef2)
 
