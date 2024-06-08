@@ -19,7 +19,17 @@ This project will be focused on CICD part of software development and embed secu
 - 
 
 # Secret scanning
-Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data 
+We will start scanning our application code for sensitive data, secrets, credentials etc. Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data. 
+
+We can install the tool locally on our system and ensure before we commit the code it flags off if there are any sensitive data in our code.
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6324b8bf-698d-438b-9c5a-cbd2f37c7b47)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ef1990fd-ef3c-41f0-a75f-54db2ba4bcbb)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/28e515a4-0d69-4023-a701-9a9a68f1c6e7)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e0053049-0399-45e8-ba4d-d02f44b69170)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8acfde66-ee93-440e-905e-865d0b48bc23)
 
@@ -35,13 +45,7 @@ Check the documentation on how to use gitleaks properly
 
 It also checks git commits to see if you have committed any sensitive data.
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6324b8bf-698d-438b-9c5a-cbd2f37c7b47)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ef1990fd-ef3c-41f0-a75f-54db2ba4bcbb)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/28e515a4-0d69-4023-a701-9a9a68f1c6e7)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e0053049-0399-45e8-ba4d-d02f44b69170)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b9f5d833-169b-4848-8880-e0fdd6e3cb1c)
 
