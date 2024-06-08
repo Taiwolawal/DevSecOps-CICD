@@ -61,7 +61,7 @@ We have a folder named test which contains some dummy sensitive data, which we u
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/9d9fde89-fa4a-44c0-9685-dbc9729fb671)
 
-![alt text](image2.png)
+![alt text](image-1.png)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e024b377-e809-4716-9417-82994f819ef2)
 
