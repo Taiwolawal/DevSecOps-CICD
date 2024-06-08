@@ -4,7 +4,7 @@ What is DevSecOps?
 
 DevSecOps stands for Development, Security, and Operations. It is an approach that integrates security practices into the DevOps process, ensuring that security is considered at every stage of the software development lifecycle (SDLC). The goal is to build a culture of shared responsibility for security among all participants in the development and operations processes.
 
-The idea is to provide layered security, such that if attackers gain access to some part of the syste they should not get access to your whole system i.e reducing the blast surface. They include:
+The idea is to provide layered security, such that if attackers gain access to some part of the system they should not get access to your whole system i.e. reducing the blast surface. They include:
 
 - Access Management
 - Network security
@@ -12,7 +12,11 @@ The idea is to provide layered security, such that if attackers gain access to s
 - Logging
 - Monitoring
 
-Setting up our CI pipeline, we will want to embed security checks in our software development lifecycle (SDLC) such as our CICD pipeline.
+This project will be focused on CICD part of software development and embed security checks in our pipelines. The tools used for the projects are:
+
+- CI: Gitlab-CI
+- Secret Scanning: Gitleaks
+- 
 
 # Secret scanning
 Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data 
@@ -53,10 +57,12 @@ Rectifying false positives
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e024b377-e809-4716-9417-82994f819ef2)
 
-# Static Code Security Testing
+# Static Code Security Testing (White Box Testing)
 - Static code analysis (app is not running)
 - Identifies security vulnerabilities in app’s source code, configuration files etc.
-- Looks for common coding errors, deviations from secure coding practices etc
+- Looks for common coding errors, deviations from secure coding practices etc.
+- Can provide precise information about the security flaws. Also helpful for addressing issues related to code quality and design flaws.
+- its linmitation does not capture vulnerabilities that only surface when interacting with the application (will be addressed in DAST)
 
 In identifying vulnerabilities in source code, there is a need to use multiple tools to achieve an overall  view of vulnerabilities. we will be using njsscan and Semgrep respectively to do that
 
@@ -293,6 +299,11 @@ sudo apt-get install trivy
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cc5f7f32-e3a8-4b7d-964a-2895ec454479)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/d7ef2d83-7024-496c-b835-8764d045fab9)
+
+# Dynamic Application Security Testing (Black Box Testing)
+- Testing the app’s running instance or deployed version
+- Simulating security attacks and analyzing behavior and responses in real-time
+- Does not require access to the code
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e675a8b9-198f-4727-b376-2da99eeb0b2d)
 
