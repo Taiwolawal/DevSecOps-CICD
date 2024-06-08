@@ -31,7 +31,11 @@ We can install the tool locally on our system and ensure before we commit the co
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e0053049-0399-45e8-ba4d-d02f44b69170)
 
+<img src="image/image.png">
+
 ![alt text](image.png)
+
+Taiwolawal/devsecops-project/image
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c43bbefc-2b0b-4a79-8f1b-c5f6bdd182d5)
 
