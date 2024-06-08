@@ -275,17 +275,22 @@ Gitlab runner instance
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cad9ea70-9a08-4770-9f1f-55a71479c937)
 
-Set-up Gitlab-runner of your Gitlab-CI repo
+Set-up Gitlab-runner on our Gitlab-CI repo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f02316ac-f2bf-494a-beee-7af59075ccac)
 
+Click on New Project Runner
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1a7f6359-76d1-473d-af39-0b888b724548)
+
+In the tags section, specify ec2, shell. Which will be what we use to reference the runner when we want to use it in the pipeline.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/dc3a241a-9231-4cef-a3e1-53d6c4ed3b34)
 
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/950896f3-f184-44fc-a43c-b5e94c31091c)
 
-Copy the following command below on the Gitlab-Runner server
+SSH into Gitlab_runner server to run the (installation commands)[https://docs.gitlab.com/runner/install/linux-repository.html]. Copy the following command below on the Gitlab-Runner server
 
 ```
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
@@ -303,7 +308,7 @@ sudo usermod -aG docker gitlab-runner
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3257478b-f8f7-4618-961c-12830f50c462)
 
 
-Restart the server
+Restart the server and lets install trivy on it to do some heavy lifting for us.
 
 ```
 sudo apt-get install wget apt-transport-https gnupg lsb-release
@@ -313,7 +318,15 @@ sudo apt-get update
 sudo apt-get install trivy
 ```
 
+To secure access to our servers (App-server & Gitlab-runner server), we need to close SSH port and have not static SSH keys. To connect to our instances securely we will be using using AWS system manager to provide a safe and secure access to our servers.
+
+Connect to the Gitlab-Runner server via SSH and run the following command ``` sudo systemctl status snap.amazon-ssm-agent.amazon-ssm-agent.service ``` to confirm if we have amazon-ssm-agent running on the server, which it is.
+
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/27e3c9e7-ff28-4d9c-bf93-3ee2e07d3e78)
+
+
+Attach SSM Role to EC2 Instance. So EC2 instance is allowed to be managed by SSM
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2143fffb-b8fc-42e7-86c3-193c98f75145)
 
