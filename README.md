@@ -57,13 +57,12 @@ We can see the pipeline failed
 
 Looking at the result we got from the scan, we have some false postives. False positive is when a scanning tool incorrectly flags a security vulnerability. As a result we need to go over the scan results to be sure, the result we are getting in line with what we are expecting. 
 
-We have a folder named test which contains some dummy sensitive data, which we used for our yarn_test. We will excempt it from the scan, thereby creating a ``.gitleaks.toml`` file and specifying the folder or path to avoid while scanning. If we run the pipeline again, you will see we now have 15 warnings compare to 4§ earlier
+We have a folder named test which contains some dummy sensitive data, which we used for our yarn_test. We will excempt it from the scan, thereby creating a ``.gitleaks.toml`` file and specifying the folder or path to avoid while scanning. If we run the pipeline again, you will see we now have 15 warnings compare to 46 earlier.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/9d9fde89-fa4a-44c0-9685-dbc9729fb671)
 
 ![alt text](image-1.png)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e024b377-e809-4716-9417-82994f819ef2)
 
 # Static Code Security Testing (White Box Testing)
 - Static code analysis (app is not running)
@@ -72,7 +71,7 @@ We have a folder named test which contains some dummy sensitive data, which we u
 - Can provide precise information about the security flaws. Also helpful for addressing issues related to code quality and design flaws.
 - its linmitation does not capture vulnerabilities that only surface when interacting with the application (will be addressed in DAST)
 
-In identifying vulnerabilities in source code, there is a need to use multiple tools to achieve an overall  view of vulnerabilities. we will be using njsscan and Semgrep respectively to do that
+In identifying vulnerabilities in source code, there is a need to use multiple tools to achieve an overall  view of vulnerabilities. we will be using [njsscan](https://hub.docker.com/r/opensecurity/njsscan) and [Semgrep](https://semgrep.dev/docs/semgrep-ci/sample-ci-configs#gitlab-cicd) respectively to do that
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/98ab1997-c9ed-4e2c-85fe-fde7cce5bb74)
 
@@ -92,7 +91,6 @@ Updating njsscan script ```njsscan --exit-warning . ``` to ensure it fails. Now 
 - Check third-party and open-source libraries and frameworks
 - SCA tool goes through the dependencies of your application and checks whether any known vulnerabilities for that dependency and the specific version
 you use
--
 
 We need to scan for all the dependencies and libraries in our code, to ensure there are no vulnerabilities in them. We will add another job to do SCA on our code in the node_module folder where our dependencies and check for the CVE's
 
