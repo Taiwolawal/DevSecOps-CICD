@@ -439,6 +439,10 @@ Now, lets update our pipeline with the base and full scan respectively. Update `
 
 ![alt text](image-9.png)
 
+Update the upload-report.py code with the base and full scan results.
+
+![alt text](image-10.png)
+
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/69daab95-24a6-4d55-a673-c900a2318d51)
 
@@ -448,7 +452,13 @@ Now, lets update our pipeline with the base and full scan respectively. Update `
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/48ba9ceb-898d-43b9-93b9-31e16c2c2d3d)
 
+After the DAST finish run, the result output points out the exact line of the code that needs fixing.
+
+Now we have a full deployed pipeline
+
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ff63201d-af05-4760-823a-a68d01f566bb)
+
+
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/fe7ed087-a2d6-4d3b-aa78-140bb95a8e73)
 
