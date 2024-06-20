@@ -390,17 +390,23 @@ Update the necessary variables for the CICD pipeline
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
 
+Now that our gitlab runner has the required permission, the following stages in the pipeline in the screenshot below will run on the Gitlab Server.
+
 ![alt text](image-7.png)
 
-Now that our gitlab runner has the required permission, the following in the above screenshot will run on the Gitlab Server.
+
 
 
 # Dynamic Application Security Testing (Black Box Testing)
-- Testing the app’s running instance or deployed version
+- Focus on identifying vulnerabilities in a running application
+- Probe application from outside, like potential attacker
 - Simulating security attacks and analyzing behavior and responses in real-time
 - Does not require access to the code
+- DAST tests are executed in one of the pre-production environments
+- If cricital security issues are found, CI/CD pipeline is aborted.
 
-Now we will 
+
+We will be making of a tool called [Zap](https://www.zaproxy.org/docs/docker/about/), an open source and widely used web application security scanner to run DAST. 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3c7ffc88-7caf-403e-9b9c-d9000402792f)
 
