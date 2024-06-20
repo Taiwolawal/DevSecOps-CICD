@@ -101,7 +101,11 @@ We will be using ```retire.js```  to scan for all the dependencies and libraries
 
 From the screenshots above, we can see all the vulnerabilities.
 
-# Build Image
+# OPA (Open Policy Agent) Conftest
+- The Open Policy Agent is an open source, general purpose policy engine that unifies policy enforcement across the stack.
+- Using Conftest you can write tests for kubernetes Configuration, dockerfile, terraform code etc.
+- Conftest uses the Rego language from Open Policy Agent for writing the assertion
+
 Before we build our image, we need to ensure our dockerfile follow best practice when creating an image such as:
 - Avoid using latest images
 - Run as a Non-Root User etc.
@@ -131,7 +135,14 @@ Now lets update the Dockerfile
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/356c5b22-26be-4885-b5aa-1fb193a8372e)
 
-Next, we need to build our image and scan them
+
+# Image Scanning (Trivy)
+- Scan every image layer for known vulnerabilities
+- Scan files inside container images for vulnerabilities, exposed Secrets, misconfigurations
+- Scans for known vulnerabilities (CVEs)
+- Scans vulnerabilities in the application dependencies
+
+Next, we need to build our image and scan them. 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aa3d5c50-ee68-4f41-88ee-b9778a5c5672)
 
