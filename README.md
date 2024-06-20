@@ -24,6 +24,7 @@ This project will be focused on CICD part of software development and embed secu
 - AWS SSM
 - DAST: Zap
 
+The repo for the project: [Juice-shop](https://gitlab.com/Taiwolawal/juice-shop)
 
 # Secret scanning
 We will start scanning our application code for sensitive data, secrets, credentials etc. Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data. 
