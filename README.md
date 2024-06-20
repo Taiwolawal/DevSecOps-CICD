@@ -330,6 +330,9 @@ sudo apt-get install trivy
 ```
 
 # Secure access to our servers (AWS SSM)
+- Close SSH port completely, and have no static SSH keys
+- Use AWS authentication and authorization mechanism for server access
+
 To secure access to our servers (App-server & Gitlab-runner server), we need to close SSH port. To connect to our instances securely we will be using using AWS system manager to provide a safe and secure access to our servers. 
 
 Connect to the Gitlab-Runner server via SSH for now and run the following command ``` sudo systemctl status snap.amazon-ssm-agent.amazon-ssm-agent.service ``` to confirm if we have amazon-ssm-agent running on the server, which it is.
@@ -373,10 +376,31 @@ Now lets connect to the Gitlab-Runner via session-manager.
 
 ![alt text](image-6.png)
 
+# Refactor code to make use of Gitlab-runner 
+
+Lets setup our image repository on AWS ECR and variables needed in the pipeline
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aa3d5c50-ee68-4f41-88ee-b9778a5c5672)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b0508352-7b55-4182-ad8c-b6c8b862db10)
+
+Update the necessary variables for the CICD pipeline
+
+![alt text](image-3.png)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
+
+![alt text](image-7.png)
+
+Now that our gitlab runner has the required permission, the following in the above screenshot will run on the Gitlab Server.
+
+
 # Dynamic Application Security Testing (Black Box Testing)
 - Testing the app’s running instance or deployed version
 - Simulating security attacks and analyzing behavior and responses in real-time
 - Does not require access to the code
+
+Now we will 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3c7ffc88-7caf-403e-9b9c-d9000402792f)
 
@@ -402,12 +426,3 @@ Now lets connect to the Gitlab-Runner via session-manager.
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4d7e3545-1896-4f48-992a-3ed8f8bf1ec3) -->
 
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aa3d5c50-ee68-4f41-88ee-b9778a5c5672)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b0508352-7b55-4182-ad8c-b6c8b862db10)
-
-Update the necessary variables for the CICD pipeline
-
-![alt text](image-3.png)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
