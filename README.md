@@ -14,9 +14,16 @@ The idea is to provide layered security, such that if attackers gain access to s
 
 This project will be focused on CICD part of software development and embed security checks in our pipelines. The tools used for the projects are:
 
-- CI: Gitlab-CI
+- CI tool: Gitlab-CI
 - Secret Scanning: Gitleaks
-- 
+- SAST: Njsscan and Semgrep
+- SCA: Retire.js
+- OPA 
+- Image scanning: Trivy
+- Vulnerability Management: DefectDojo
+- AWS SSM
+- DAST: Zap
+
 
 # Secret scanning
 We will start scanning our application code for sensitive data, secrets, credentials etc. Different tools can be used to scan for sensitive data in our code. We will be using gitleaks to check any hardcoded data. 
