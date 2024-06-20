@@ -18,7 +18,7 @@ This project will be focused on CICD part of software development and embed secu
 - Secret Scanning: Gitleaks
 - SAST: Njsscan and Semgrep
 - SCA: Retire.js
-- OPA 
+- OPA Conftest (Static test on dockerfile)
 - Image scanning: Trivy
 - Vulnerability Management: DefectDojo
 - AWS SSM
@@ -282,15 +282,6 @@ Gitlab runner instance
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4429c583-3939-41ea-b031-e80d88932193)
 
 
-
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1fef15e6-ef7b-40ee-b878-77fc84951162)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cad9ea70-9a08-4770-9f1f-55a71479c937)
-
-
-
-
 Set-up Gitlab-runner on our Gitlab-CI repo
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/f02316ac-f2bf-494a-beee-7af59075ccac)
@@ -371,7 +362,7 @@ Attach the role to the Gitlab-Runner server
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e439240d-1150-4bde-a406-44ae38542479)
 
 
-Perform the same for App-server. Moving forward we should remove port 22 from both servers.
+Perform the same for App-server. Moving forward we should remove port 22 from both servers, ensure you open port 3000 for App-server for the application we will deploy 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/d7ef2d83-7024-496c-b835-8764d045fab9)
 
@@ -403,7 +394,7 @@ Now that our gitlab runner has the required permission, the following stages in 
 
 # Deploy app to App-Server (instance)
 
-Now we will use AWS SSM to deploy our application on the App-server in automated way using the script describe in the screenshot below. The breakdown of script:
+Now we will use AWS SSM to deploy our application to the App-server in an automated way using the script describe in the screenshot below. The breakdown of script:
 
 LOG_IN_CMD: specifying the AWS region and connecting to the ECR.
 
