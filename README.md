@@ -139,7 +139,7 @@ Next, we need to build our image and scan them
 
 Update the necessary variables for the CICD pipeline
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/31d8d558-30dd-436c-8ca4-2cabbcf039d9)
+![alt text](image-3.png)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
 
