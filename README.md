@@ -435,9 +435,7 @@ Full Scan:
 - No time limit, takes much longer
 - Run on a specified time e.g 12am everyday
 
-Now, lets update our pipeline with the base and full scan respectively. Update ```ZAP_TARGET```with the App-Server with the public address and the port
-
-
+Now, lets update our pipeline with the base and full scan respectively. Update ```ZAP_TARGET```with the App-Server public address and the port
 
 ![alt text](image-9.png)
 
