@@ -137,12 +137,21 @@ Now lets update the Dockerfile
 
 
 # Image Scanning (Trivy)
+We will use a tool called [trivy](https://aquasecurity.github.io/trivy/v0.52/) for scan our images
 - Scan every image layer for known vulnerabilities
 - Scan files inside container images for vulnerabilities, exposed Secrets, misconfigurations
 - Scans for known vulnerabilities (CVEs)
 - Scans vulnerabilities in the application dependencies
 
 Next, we need to build our image and scan them. 
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ba6624a4-a196-454b-9b85-7c4649fbc8a3)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c3d583c4-21ba-40d6-96c2-4012c30f6756)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e26e754f-2ba1-41d0-a188-63a4cff211f4)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2d4accd9-59ed-4a6b-8128-5c7381e7d1be)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aa3d5c50-ee68-4f41-88ee-b9778a5c5672)
 
@@ -153,16 +162,6 @@ Update the necessary variables for the CICD pipeline
 ![alt text](image-3.png)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/ba6624a4-a196-454b-9b85-7c4649fbc8a3)
-
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/c3d583c4-21ba-40d6-96c2-4012c30f6756)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e26e754f-2ba1-41d0-a188-63a4cff211f4)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2d4accd9-59ed-4a6b-8128-5c7381e7d1be)
-
 
 # Vulnerability Management
 
