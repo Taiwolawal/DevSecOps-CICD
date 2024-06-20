@@ -399,13 +399,14 @@ Now that our gitlab runner has the required permission, the following stages in 
 Now we will use AWS SSM to deploy our application on the App-server in automated way using the script describe in the screenshot below. The breakdown of script:
 
 LOG_IN_CMD: specifying the AWS region and connecting to the ECR.
-COMMANDS_TO_EXECUTE: Pull the latest image and ensure you stop any running container and remove the container. Followed by running recently pull image on port 3000 (ensure you have open port 3000 in the App-server)
+
+COMMANDS_TO_EXECUTE: Pull the latest image and ensure you stop any running container and remove the container. Followed by running recently pull image on port 3000 (ensure you have open port 3000 in the App-server).
+
 COMMAND_ID: This command sends a request to AWS Systems Manager to execute the specified commands [$LOG_IN_CMD, $COMMANDS_TO_EXECUTE] on the EC2 instance i-0e606fa6ca075072b (App-Server instance id). The output of the command (the CommandId) is captured in the COMMAND_ID variable, which can be used later in the script to track the status or result of the command execution.
+
 aws ssm get-command-invocation --command-id "$COMMAND_ID" --instance-id "i-0e606fa6ca075072b": The provided command uses the AWS CLI to query the status and results of a previously sent command to  EC2 instance via AWS Systems Manager (SSM) to confirm if it was successful
 
-![alt text](image-8.png)
-
-
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3c7ffc88-7caf-403e-9b9c-d9000402792f)
 
 
 # Dynamic Application Security Testing (Black Box Testing)
@@ -419,7 +420,25 @@ aws ssm get-command-invocation --command-id "$COMMAND_ID" --instance-id "i-0e606
 
 We will be making of a tool called [Zap](https://www.zaproxy.org/docs/docker/about/), an open source and widely used web application security scanner to run DAST. 
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3c7ffc88-7caf-403e-9b9c-d9000402792f)
+There are two (2) kinds of scan: Baseline and Full Scan
+
+Baseline Scan:
+
+- Quick and lightweight - aiming to provide a rapid overview of vulnerabilities without conducting an exhaustive analysis
+- Focus on well-known and frequently exploited vulnerabilities
+- Runs on every single commit
+
+Full Scan:
+
+- Script performs actual attacks
+- In-depth analysis, including less common or unique attack scenarios
+- No time limit, takes much longer
+- Run on a specified time e.g 12am everyday
+
+
+
+![alt text](image-9.png)
+
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/69daab95-24a6-4d55-a673-c900a2318d51)
 
