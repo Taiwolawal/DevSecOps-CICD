@@ -14,11 +14,6 @@ elif file_name == 'retire.json':
     scan_type = 'Retire.js Scan'
 elif file_name == 'trivy.json':
     scan_type = 'Trivy Scan'
-elif file_name == 'baseline.json':
-    scan_type = 'Zap Scan'
-elif file_name == 'zap.json':
-    scan_type = 'Zap Scan'
-
 
 headers = {
     'Authorization': 'Token 911f3b56988130b2363fdd9088d5c2f8420f2bdaf'

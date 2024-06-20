@@ -155,9 +155,12 @@ Next, we need to build our image and scan them.
 
 From the screenshot above, we can see all the vulnerabilities in our images.
 
-# Vulnerability Management
+# Vulnerability Management (DefectDojo)
+- Centrally manage vulnerability findings of different tool
+- Triage vulnerabilities and push findings to other systems
+- Enriches and refines vulnerability data
 
-Now that we have done some tests, we should be able to upload all the results from the various scan to a centralised platform, where we can audit each vulnerability. This leads us to ``Defectdojo`` which will be used to visualize all our scan results. Now we need to update our code to update results from each tool. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
+Now that we have done some tests, we should be able to upload all the results from the various scan to a centralised platform, where we can audit each vulnerability. This leads us to [Defectdojo](https://documentation.defectdojo.com/) which will be used to visualize all our scan results. Now we need to update our code to update results from each tool. We are updating the script to use a particular output format to save the result with a given name and save it as an artifact (which can be referenced in the pipeline) with a given name.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/777097d5-734d-4a80-92d7-4452807d266f)
 
@@ -224,7 +227,7 @@ We have our python code ```upload-reports.py```consisting of the API KEY token a
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/96a3b21c-ef5d-4039-81f1-b377fbb211f6)
 
-![alt text](image-2.png)
+![alt text](image-4.png)
 
 <!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/17721afb-d0e0-4e8f-b6ac-54f6b119fc68) -->
 
