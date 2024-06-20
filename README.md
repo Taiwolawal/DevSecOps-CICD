@@ -260,8 +260,9 @@ Now we have uploaded all our scan results on DefectDojo
 
 Now, we can easily audit all the vulnerabilities and have a very good understanding on common ones you are faced with and address ways of minimizing it.
 
-Next, we will deploy the application on a server (App-Server) to run DAST and also provision a server (Gitlab-Runner) to have our Self-managed Gitlab runner to run our work loads. The idea of running your pipeline workloads on a dedicated Gitlab runner is to allows for better control over security policies and compliance with internal security requirements. You can ensure that sensitive data and credentials are handled securely.
+# Provision Server (App-Server & Gitlab-Runner)
 
+Next, we will deploy the application on a server (App-Server) to run DAST and also provision a server (Gitlab-Runner) to have our Self-managed Gitlab runner to run our work loads. The idea of running your pipeline workloads on a dedicated Gitlab runner is to allows for better control over security policies and compliance with internal security requirements. You can ensure that sensitive data and credentials are handled securely.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/80b48ad4-4bb1-4f87-8150-ef69ce45b541)
 
@@ -279,6 +280,9 @@ Gitlab runner instance
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/1fef15e6-ef7b-40ee-b878-77fc84951162)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cad9ea70-9a08-4770-9f1f-55a71479c937)
+
+
+
 
 Set-up Gitlab-runner on our Gitlab-CI repo
 
@@ -312,8 +316,10 @@ sudo usermod -aG docker gitlab-runner
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3257478b-f8f7-4618-961c-12830f50c462)
 
+Now we have setup our gitlab runner to handle workloads of our pipeline.
 
-Restart the server and lets install trivy on it to do some heavy lifting for us.
+
+We can install trivy also on the Gitlab-Runner server to run the trivy pipeline stage. Restart the server and lets install trivy on it to do some heavy lifting for us.
 
 ```
 sudo apt-get install wget apt-transport-https gnupg lsb-release
@@ -323,9 +329,10 @@ sudo apt-get update
 sudo apt-get install trivy
 ```
 
-To secure access to our servers (App-server & Gitlab-runner server), we need to close SSH port and have not static SSH keys. To connect to our instances securely we will be using using AWS system manager to provide a safe and secure access to our servers.
+# Secure access to our servers (AWS SSM)
+To secure access to our servers (App-server & Gitlab-runner server), we need to close SSH port. To connect to our instances securely we will be using using AWS system manager to provide a safe and secure access to our servers. 
 
-Connect to the Gitlab-Runner server via SSH and run the following command ``` sudo systemctl status snap.amazon-ssm-agent.amazon-ssm-agent.service ``` to confirm if we have amazon-ssm-agent running on the server, which it is.
+Connect to the Gitlab-Runner server via SSH for now and run the following command ``` sudo systemctl status snap.amazon-ssm-agent.amazon-ssm-agent.service ``` to confirm if we have amazon-ssm-agent running on the server, which it is.
 
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/27e3c9e7-ff28-4d9c-bf93-3ee2e07d3e78)
@@ -353,24 +360,23 @@ Attach the role to the Gitlab-Runner server
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e439240d-1150-4bde-a406-44ae38542479)
 
-Now lets connect to the Gitlab-Runner via session-manager. 
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/82aa54a3-6311-4a0a-9aa0-137a3b522d51)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/042b2fdf-e273-4811-8229-90a648df5a6b)
-
-Moving forward we should remove port 22 from both servers.
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/cc5f7f32-e3a8-4b7d-964a-2895ec454479)
+Perform the same for App-server. Moving forward we should remove port 22 from both servers.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/d7ef2d83-7024-496c-b835-8764d045fab9)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e675a8b9-198f-4727-b376-2da99eeb0b2d)
+
+Now lets connect to the Gitlab-Runner via session-manager.
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
 
 # Dynamic Application Security Testing (Black Box Testing)
 - Testing the app’s running instance or deployed version
 - Simulating security attacks and analyzing behavior and responses in real-time
 - Does not require access to the code
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/e675a8b9-198f-4727-b376-2da99eeb0b2d)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/3c7ffc88-7caf-403e-9b9c-d9000402792f)
 
