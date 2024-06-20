@@ -153,15 +153,7 @@ Next, we need to build our image and scan them.
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/2d4accd9-59ed-4a6b-8128-5c7381e7d1be)
 
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aa3d5c50-ee68-4f41-88ee-b9778a5c5672)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b0508352-7b55-4182-ad8c-b6c8b862db10)
-
-Update the necessary variables for the CICD pipeline
-
-![alt text](image-3.png)
-
-![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
+From the screenshot above, we can see all the vulnerabilities in our images.
 
 # Vulnerability Management
 
@@ -399,3 +391,14 @@ Moving forward we should remove port 22 from both servers.
 <!-- ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/8acfde66-ee93-440e-905e-865d0b48bc23)
 
 ![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/4d7e3545-1896-4f48-992a-3ed8f8bf1ec3) -->
+
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/aa3d5c50-ee68-4f41-88ee-b9778a5c5672)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/b0508352-7b55-4182-ad8c-b6c8b862db10)
+
+Update the necessary variables for the CICD pipeline
+
+![alt text](image-3.png)
+
+![image](https://github.com/Taiwolawal/devsecops-project/assets/50557587/6f67a5ca-9bbe-4294-9509-c060e5388776)
