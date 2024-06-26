@@ -1,6 +1,4 @@
-## (Currently still working on the documentation)
-
-What is DevSecOps?
+## What is DevSecOps?
 
 DevSecOps stands for Development, Security, and Operations. It is an approach that integrates security practices into the DevOps process, ensuring that security is considered at every stage of the software development lifecycle (SDLC). The goal is to build a culture of shared responsibility for security among all participants in the development and operations processes.
 
